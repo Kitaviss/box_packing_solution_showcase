@@ -131,4 +131,4 @@ This is a showcase project demonstrating algorithmic capabilities. The core algo
 
 ---
 
-- This readme is created by AI lol =]]]
+- This readme is created by AI, but the algorithm is created by me lol =]]]
