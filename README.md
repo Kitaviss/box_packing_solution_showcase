@@ -2,6 +2,13 @@
 
 > An intelligent fulfillment optimization system that combines **Dynamic Programming** with **Heuristic Strategies** to solve real-world 3D bin packing challenges.
 
+## 📸 Screenshots
+
+![Infographic](assets/infographic.png)
+*Algorithm overview and proven impact metrics*
+
+---
+
 ## 🚀 Live Demo
 
 **Try it yourself:** [https://box-packing-solution.onrender.com/](https://box-packing-solution.onrender.com/)
@@ -22,9 +29,9 @@ This project addresses a critical challenge in e-commerce fulfillment: **determi
 
 ### The Solution
 An automated 3D box packing algorithm that:
-- ✅ Selects the most appropriate box size from available inventory
+- ✅ Selects the most appropriate box size from available collaction of boxes
 - ✅ Generates optimal 3D placement coordinates for all items
-- ✅ Validates physical constraints (dimensions, weight, fragility)
+- ✅ Validates physical constraints
 - ✅ Provides visual 3D simulation for verification
 
 ---
@@ -37,13 +44,13 @@ Evaluates all available box options against the item set and recommends the most
 ### 🧮 Hybrid Algorithm Architecture
 
 #### **Dynamic Programming Core**
-- **Optimal Substructure**: Breaks down complex packing problems into manageable sub-problems
+- **Optimal Substructure**: Breaks down complex packing problems into manageable sub-problems and solve with Depth First Search
 - **Memoization**: Caches solutions to avoid redundant calculations
-- **Strategic Point Selection**: Uses a dual-strategy approach:
-  - **Corner Priority**: Tests corner points first for natural stability
-  - **Surface Mapping**: Identifies potential placement points along existing item surfaces for tighter packing
 
 #### **Heuristic Enhancements**
+- **Strategic Point Selection**: Uses a dual-strategy approach:
+  - **Corner Priority**: Tests corner points first for natural stability
+  - **Binary Searching Overlapping Point**: Identifies potential overlapping placement points along existing item surfaces
 - **Priority-Based Placement**: Items are sorted by size, fragility, and stackability before placement
 - **Multi-Orientation Testing**: Each item is tested in all valid rotations (respecting constraints)
 - **Greedy Best-Fit**: Selects placement positions that minimize wasted space and maintain stability
@@ -71,7 +78,7 @@ Traditional approaches struggle with:
 - **Greedy Limitations**: Simple greedy algorithms get stuck in local optima
 
 ### The Solution Engine
-1. **Input Processing**: Receive order items (dimensions, weight, fragility) and available box inventory
+1. **Input Processing**: Receive order items (dimensions) and available boxes collection
 2. **Box Evaluation**: Dynamic Programming evaluates feasibility for each box option
 3. **Optimal Placement**: Heuristic strategies determine precise 3D coordinates
 4. **Validation**: Checks all physical constraints (overlap, stability, weight distribution)
@@ -98,16 +105,8 @@ Traditional approaches struggle with:
 
 ---
 
-## 📸 Screenshots
-
-![Infographic](assets/infographic.png)
-*Algorithm overview and proven impact metrics*
-
----
-
 ## 📚 Technical Background
 
-This project demonstrates the practical application of:
 - **Dynamic Programming**: Breaking down complex optimization problems
 - **Heuristic Algorithms**: Balancing optimality with computational efficiency
 - **3D Computational Geometry**: Spatial reasoning and collision detection
